@@ -13,14 +13,14 @@ $text-color: #2c3e50;      // 文字颜色，深灰
 ---
 ---
 body {
-  background-color: #f5f5f5;  /* 淡灰色背景，淡雅舒适 */
+  background-color: $secondary-color;  /* 淡灰色背景，淡雅舒适 */
   color: #2c3e50;             /* 文字深灰色，更易阅读 */
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 /* 文章区背景 */
 main, .content {
-  background-color: #ffffff; /* 白色或稍微带灰的白色 */
+  background-color: $secondary-color; /* 白色或稍微带灰的白色 */
   padding: 1.5em;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* 柔和阴影 */
