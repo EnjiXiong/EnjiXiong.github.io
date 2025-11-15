@@ -1,0 +1,43 @@
+---
+# 这三行必须有，Jekyll 才会处理 SCSS
+---
+
+/* 基础配色 */
+$primary-color: #7f8c8d;   // 主色，灰蓝色
+$secondary-color: #ecf0f1; // 背景色，淡灰色
+$accent-color: #3498db;    // 点缀色，柔和蓝
+$text-color: #2c3e50;      // 文字颜色，深灰
+
+/* 覆盖主题变量（不同主题变量名可能不同，下面是示例） */
+body {
+  background-color: $secondary-color;
+  color: $text-color;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($accent-color, 10%);
+  }
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+  color: $text-color;
+}
+
+/* 链接按钮或其他强调部分 */
+button, .btn {
+  background-color: $primary-color;
+  color: $secondary-color;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
