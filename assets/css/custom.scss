@@ -9,23 +9,11 @@ $accent-color: #3498db;    // 点缀色，柔和蓝
 $text-color: #2c3e50;      // 文字颜色，深灰
 
 /* 覆盖主题变量（不同主题变量名可能不同，下面是示例） */
-/* 整体页面背景色 */
----
----
 body {
-  background-color: $secondary-color;  /* 淡灰色背景，淡雅舒适 */
-  color: #2c3e50;             /* 文字深灰色，更易阅读 */
+  background-color: $secondary-color;
+  color: $text-color;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
-
-/* 文章区背景 */
-main, .content {
-  background-color: $secondary-color; /* 白色或稍微带灰的白色 */
-  padding: 1.5em;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* 柔和阴影 */
-}
-
 
 a {
   color: $accent-color;
